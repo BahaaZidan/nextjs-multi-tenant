@@ -5,7 +5,7 @@ import prisma from "@/lib/prisma";
 
 if (!process.env.GITHUB_ID || !process.env.GITHUB_SECRET)
   throw new Error("Failed to initialize Github authentication");
-
+// okay
 export const authOptions: NextAuthOptions = {
   providers: [
     GitHubProvider({
