@@ -148,7 +148,7 @@ export default function Post({
       )}
       {adjacentPosts && (
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-4 gap-y-8 mx-5 lg:mx-12 2xl:mx-auto mb-20 max-w-screen-xl">
-          {adjacentPosts.map((data, index) => (
+          {adjacentPosts.map((data: any, index: number) => (
             <BlogCard key={index} data={data} />
           ))}
         </div>
