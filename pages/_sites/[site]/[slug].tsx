@@ -51,9 +51,9 @@ export default function Post({
   const data = JSON.parse(stringifiedData) as _SiteSlugData & {
     mdxSource: MDXRemoteSerializeResult<Record<string, unknown>>;
   };
-  const adjacentPosts = JSON.parse(
+  const adjacentPosts = stringifiedAdjacentPosts? JSON.parse(
     stringifiedAdjacentPosts
-  ) as Array<AdjacentPost>;
+  ) : [] as Array<AdjacentPost>;
 
   const meta = {
     description: data.description,
