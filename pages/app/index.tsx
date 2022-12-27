@@ -24,7 +24,7 @@ export default function AppIndex() {
   const siteNameRef = useRef<HTMLInputElement | null>(null);
   const siteSubdomainRef = useRef<HTMLInputElement | null>(null);
   const siteDescriptionRef = useRef<HTMLTextAreaElement | null>(null);
-
+ // lkj
   useEffect(() => {
     async function checkSubDomain() {
       if (debouncedSubdomain.length > 0) {
