@@ -23,7 +23,7 @@ export async function createDomain(
 
   try {
     const response = await fetch(
-      `https://api.vercel.com/v8/projects/${process.env.PROJECT_ID_VERCEL}/domains?teamId=${process.env.TEAM_ID_VERCEL}`,
+      `https://api.vercel.com/v8/projects/${process.env.PROJECT_ID_VERCEL}/domains`,
       {
         body: `{\n  "name": "${domain}"\n}`,
         headers: {
