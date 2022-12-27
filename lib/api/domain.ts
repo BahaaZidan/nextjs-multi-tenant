@@ -79,7 +79,7 @@ export async function deleteDomain(
 
   try {
     const response = await fetch(
-      `https://api.vercel.com/v6/domains/${domain}?teamId=${process.env.TEAM_ID_VERCEL}`,
+      `https://api.vercel.com/v6/domains/${domain}`,
       {
         headers: {
           Authorization: `Bearer ${process.env.AUTH_BEARER_TOKEN}`,

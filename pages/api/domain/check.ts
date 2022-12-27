@@ -39,7 +39,7 @@ export default async function post(req: NextApiRequest, res: NextApiResponse) {
     }
 
     const response = await fetch(
-      `https://api.vercel.com/v6/domains/${domain}/config?teamId=${process.env.TEAM_ID_VERCEL}`,
+      `https://api.vercel.com/v6/domains/${domain}/config`,
       {
         method: HttpMethod.GET,
         headers: {
